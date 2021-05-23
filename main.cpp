@@ -1,9 +1,8 @@
-#include "speaker.h"
 #include <iostream>
 
 int main(int argc, char *argv[])
 {
-	sayHi("atilileri");
+	std::cout << "Hello from main func" << std::endl;
 	std::cout << "Goodbye..." << std::endl;
 	return 0;
 }
