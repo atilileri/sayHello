@@ -6,18 +6,17 @@ TEST(SpeakerTest, atilileri) {
     // Expect two strings not to be equal.
     EXPECT_STRNE("hello", "world");
     // Expect outputs to be equal.
-    EXPECT_EQ("Hi atilile", sayHi("atilileri")); // insterted failure here for demonstration purposes.
+    EXPECT_EQ("Hi atilileri", sayHi("atilileri"));
     // Expect equality.
     EXPECT_EQ(7 * 6, 42);
 }
 
 // part 2
-TEST(SpeakerTest, test2) {
-    // Expect two strings not to be equal.
-    EXPECT_STRNE("hello", "world");
-    // Expect outputs to be equal.
-    EXPECT_EQ("Hi atililerialkan", sayHi("atililerialkan"));
-    // Expect equality.
-    EXPECT_EQ(7 * 3, 21);
+TEST(SpeakerTest, longTest) {
+    for (int i=0; i<1000; ++i)
+    {
+        // Expect outputs to be equal.
+        EXPECT_EQ("Hi atililerialkan" + std::to_string(i), sayHi("atililerialkan" + std::to_string(i)));
+    }
 }
 
