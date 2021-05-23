@@ -7,7 +7,7 @@ enable_testing()
 
 add_subdirectory(src)
 add_subdirectory(tests)
-# add_subdirectory(benchmark)
+add_subdirectory(benchmark)
 # add_subdirectory(cli)
 # add_subdirectory(docs)
 
