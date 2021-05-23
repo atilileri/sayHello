@@ -1,5 +1,6 @@
-# sayHello
+# My sayHello Project
 
 [![main](https://github.com/atilileri/sayHello/actions/workflows/main.yml/badge.svg)](https://github.com/atilileri/sayHello/actions/workflows/main.yml)
 
-Build + Test Workflow on main branch
+### Learning workflows
+Build + Test (Google Test - GTest) + Benchmark (Google Benchmark) Workflow on main branch by CMake
