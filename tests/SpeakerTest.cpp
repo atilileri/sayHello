@@ -11,9 +11,9 @@ TEST(SpeakerTest, atilileri) {
     EXPECT_EQ(7 * 6, 42);
 }
 
-// part 2
+// some longer tests for duration
 TEST(SpeakerTest, longTest) {
-    for (int i=0; i<1000; ++i)
+    for (int i=0; i<100000; ++i)
     {
         // Expect outputs to be equal.
         EXPECT_EQ("Hi atililerialkan" + std::to_string(i), sayHi("atililerialkan" + std::to_string(i)));

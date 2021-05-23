@@ -24,7 +24,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install Dependencies
-      run: sudo apt-get install libgtest-dev
+      run: sudo apt-get install libgtest-dev libbenchmark-dev
 
     - name: Configure CMake
       # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
@@ -41,3 +41,7 @@ jobs:
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ctest -C ${{env.BUILD_TYPE}} --verbose
       
+    - name: Benchmark
+      working-directory: ${{github.workspace}}/build
+      # Execute benchmark application(s) defined by the CMake configuration
+      run: ./benchmark/SpeakerBench
